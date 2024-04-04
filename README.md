@@ -47,7 +47,8 @@ liquidity = Math.min(amount0.mul(_totalSupply) / _reserve0, amount1.mul(_totalSu
 > Intuitively, the liquidity (LP-tokens) should 1. be propotional to the deposited amount (ex. amount0, amount1) 2. be propotional to the total amount of LP-tokens. Therefore, the above formula is created. Additionally, the min() is yet another trick to punish those who deposit unbalanced liquidity into the pool (since the provider will only get the smaller one). It would be more benefitial for Uniswap to issue the smaller number of LP-tokens.
 
 ## Problem 5
-What is a sandwich attack, and how might it impact you when initiating a swap?
+What is a sandwich attack, and how might it impact you when initiating a swap? <br>
+> The sandwich attack works as follows: <br>
 > 1. Monitoring Transactions: The attacker monitors the pending transactions on the blockchain, looking for transactions that involve significant trades or movements of assets on the DEX. <br>
 > 2. Front-Running: The attacker quickly places their own transaction in front of the target transaction (submitted by user). This transaction usually involves buying or selling the same asset that the target transaction is attempting to trade. <br>
 > 3. Benefit: The attackers swap is completed at a low price, whereas, the user’s transaction is completed at a high price, which means they receive less tokens than expected. <br>
