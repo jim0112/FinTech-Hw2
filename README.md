@@ -57,4 +57,4 @@ What is a sandwich attack, and how might it impact you when initiating a swap? <
 
 
 ### Bonus
-The Arbitrage.py already outputs the most profitable path among all possible swap paths (the path in problem 1). Therefore, I am not going to provide another python script.
+The Arbitrage.py already outputs the most profitable path among all possible swap paths (the path in problem 1). Therefore, I am not going to provide another python script. (I assume that one cannot swap to the same token twice except tokenB)

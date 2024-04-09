@@ -51,8 +51,8 @@ if __name__ == '__main__':
     init_amount = 5
     newLiquidity = {}
     for (a, b), (x, y) in liquidity.items():
-        newLiquidity[(a, b)] = (x, y)
-        newLiquidity[(b, a)] = (y, x)
+        newLiquidity[a, b] = (x, y)
+        newLiquidity[b, a] = (y, x)
     liquidity = newLiquidity
     # print(liquidity)
     dfs("tokenB", [], init_amount)
