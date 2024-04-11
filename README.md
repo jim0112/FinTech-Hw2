@@ -54,7 +54,3 @@ What is a sandwich attack, and how might it impact you when initiating a swap? <
 > 3. Benefit: The attackers swap is completed at a low price, whereas, the user’s transaction is completed at a high price, which means they receive less tokens than expected. <br>
 
 > To sum up, the attacker profits from the increase in price from the previous transactions. This results in a gain for the attacker, and a loss for the user.
-
-
-### Bonus
-The Arbitrage.py already outputs the most profitable path among all possible swap paths (the path in problem 1). Therefore, I am not going to provide another python script. (I assume that one cannot swap to the same token twice except tokenB)
